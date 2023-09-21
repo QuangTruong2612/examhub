@@ -1,0 +1,59 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@300;400;500;700&family=Poppins:wght@200;300;400;500;600;700&display=swap');
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+    --primary: #543e93;
+    --button-color: linear-gradient(180deg, #f05f5f 0%, #b33030 100%);
+    --header-color: linear-gradient(to right, #291b6d 30%, #f8fc19 100%);
+    --white: #ffff;
+}
+html {
+    box-sizing: border-box;
+    overflow: hidden auto;
+    scroll-behavior: smooth;
+}
+* {
+    box-sizing: border-box;
+}
+body {
+    box-sizing: border-box;
+}
+.SearchIcon {
+    font-size: 24px;
+}
+.SelectItem {
+    width: 48px;
+    height: 24px;
+    box-shadow: none;
+}
+.ant-select-selector {
+    padding: 0 !important;
+    width: 100% !important;
+    height: 100% !important;
+    flex: 1 !important;
+    border: none !important;
+    box-shadow: none !important;
+}
+.ant-select-selection-item {
+    display: flex !important;
+    align-items: center !important;
+    padding: 0;
+}
+.ant-select-arrow {
+    font-size: 14px !important;
+    right: 0 !important;
+    color: black !important;
+}
+.DownIcon {
+    font-size: 16px;
+    display: flex;
+    align-items: center;
+}
+
+.girl {
+    position: absolute;
+    top: 0;
+    left: -140px;
+}
