@@ -17,7 +17,7 @@ import {
     HEARDER_BTN,
     LISTITEM,
     ITEMNAV,
-} from '../../styles/component/HEADER_Style';
+} from '../styles/component/HEADER_Style';
 
 import Logo from '../../public/LOGOEXAM.png';
 import Flag from '../../public/Flag.svg';
