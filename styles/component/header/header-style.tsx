@@ -95,14 +95,14 @@ export const HEADER_FOOTER_NAVBAR = styled.div`
     border-radius: 100px;
 `;
 
-export const LISTITEM = styled.ul`
+export const LISTITEM = styled.nav`
     display: flex;
     align-items: center;
     padding: 0;
     margin: 0;
 `;
 
-export const ITEMNAV = styled.li`
+export const ITEMNAV = styled.div`
     font-family: 'Nunito', sans-serif;
     font-weight: 600;
     font-size: 14px;
