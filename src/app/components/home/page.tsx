@@ -1,5 +1,3 @@
-'use client';
-
 import React from 'react';
 import { CONTAINER, CONTAINER1 } from '../../../../styles/component/home/home-styled';
 

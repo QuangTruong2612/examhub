@@ -64,7 +64,7 @@ body {
     box-shadow: var(--primary) 0px 0px 6px;
 }
 .ant-select-dropdown {
-    inset: 56px auto auto 964px !important;
+    inset: 56px auto auto 948px !important;
 }
 .rc-virtual-list-holder-inner {
     row-gap: 6px;

@@ -1,6 +1,4 @@
-'use client';
 import React from 'react';
-
 import Image from 'next/image';
 import { DownOutlined, SearchOutlined } from '@ant-design/icons';
 import { Select } from 'antd';
@@ -17,6 +15,7 @@ import {
     HEARDER_BTN,
     LISTITEM,
     ITEMNAV,
+    DIV_SEARCH,
 } from '../../../../styles/component/header/header-style';
 
 import Logo from '../../../../public/LOGOEXAM.png';
@@ -28,7 +27,7 @@ import Link from 'next/link';
 import { usePathname } from 'next/navigation';
 
 import { useState } from 'react';
-
+import { SearchList } from './search/searchItem';
 export default function Header() {
     const items = [
         {
@@ -49,15 +48,17 @@ export default function Header() {
         },
     ];
     // API SEARCH
-    const [text, setText] = useState('');
-    console.log(text);
 
+    const [text, setText] = useState('');
+
+    // ----------
     const pathname = usePathname();
     return (
         <HEADER>
             <HEADER_FRAME>
                 <Image alt="Logo" src={Logo} width={86} height={42} />
                 <HEADER_SEARCH>
+                    {/* ---------------------- */}
                     <HEADER_SEARCH_BUTTON>
                         <SearchOutlined className="SearchIcon" />
                     </HEADER_SEARCH_BUTTON>
@@ -67,6 +68,13 @@ export default function Header() {
                         name="action"
                         onChange={(e) => setText(e.target.value)}
                     />
+                    {/* -----------SEARCH------------- */}
+                    <DIV_SEARCH>
+                        <main>
+                            <SearchList value={text} />
+                        </main>
+                    </DIV_SEARCH>
+                    {/* ----------------------------- */}
                 </HEADER_SEARCH>
                 <HEADER_NAVBAR>
                     <Select className="SelectItem" defaultValue={items.at(0)}>
@@ -81,7 +89,7 @@ export default function Header() {
                         <DownOutlined className="DownIcon" />
                     </HEARDER_BTN>
                     <HEARDER_BTN>
-                        <Link href="/api/search.php">Đăng nhập</Link>
+                        <Link href="">Đăng nhập</Link>
                     </HEARDER_BTN>
                 </HEADER_NAVBAR>
             </HEADER_FRAME>

@@ -142,3 +142,15 @@ export const ITEMNAV = styled.div`
         margin: 2px 8px;
     }
 `;
+
+export const DIV_SEARCH = styled.div`
+    position: absolute;
+    width: 100%;
+    height: 100px;
+    background-color: #fff;
+    z-index: 1000;
+    top: 50px;
+    left: 0;
+    border-radius: 10px;
+    box-shadow: var(--primary) 0px 0px 6px;
+`;
