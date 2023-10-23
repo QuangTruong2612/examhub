@@ -21,7 +21,7 @@ export default function Container3() {
                 <div className="body_center">
                     <Image src={baloonImag} alt="baloon" width={482} height={500} />
                     <div className="body_center-content">
-                        <CONTAINER3_BODY_CONTENT></CONTAINER3_BODY_CONTENT>
+                        <CONTAINER3_BODY_CONTENT>lasda;</CONTAINER3_BODY_CONTENT>
                     </div>
                 </div>
             </CONTAINER3_BODY>
