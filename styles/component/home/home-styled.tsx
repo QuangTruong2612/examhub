@@ -253,6 +253,7 @@ export const CONTAINER2_FOOTER_BTN = styled.button`
 export const CONTAINER3 = styled.div`
     width: 100%;
     padding-top: 20px;
+    margin-bottom: 20px;
 `;
 
 export const CONTAINER3_HEADER = styled.div`
@@ -303,7 +304,7 @@ export const CONTAINER3_BODY = styled.div`
         margin-left: 16px;
         display: flex;
         flex-direction: column;
-        row-gap: 50px;
+        row-gap: 76px;
     }
 `;
 
@@ -313,5 +314,21 @@ export const CONTAINER3_BODY_CONTENT = styled.div`
     row-gap: 6px;
 
     span {
+        color: var(--primary);
+        font-family: 'Poppins', sans-serif;
+        font-size: var(--font-size-primary);
+        font-style: normal;
+        font-weight: 700;
+        line-height: 28px; /* 140% */
+    }
+    p {
+        padding: 0;
+        margin: 0;
+        color: var(--dark-gray);
+        font-family: 'Poppins', sans-serif;
+        font-size: var(--font-size-primary);
+        font-style: normal;
+        font-weight: 400;
+        line-height: 28px; /* 140% */
     }
 `;
