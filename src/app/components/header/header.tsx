@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import Image from 'next/image';
 import { DownOutlined, SearchOutlined } from '@ant-design/icons';
 import { Select } from 'antd';
@@ -24,10 +24,11 @@ import KOR from '../../../../public/han.png';
 import AME from '../../../../public/my.png';
 import ENG from '../../../../public/eng.png';
 import Link from 'next/link';
-import { usePathname } from 'next/navigation';
+import { usePathname, useRouter } from 'next/navigation';
 
 import { useState } from 'react';
 import { SearchList } from './search/searchItem';
+
 export default function Header() {
     const items = [
         {
@@ -47,16 +48,17 @@ export default function Header() {
             icon: <Image src={ENG} alt="VN" width={24} height={16} />,
         },
     ];
-    // API SEARCH
-
+    // action search
     const [text, setText] = useState('');
+
+    const [visible, setVisble] = useState(false);
 
     // ----------
     const pathname = usePathname();
     return (
         <HEADER>
             <HEADER_FRAME>
-                <Image alt="Logo" src={Logo} width={86} height={42} />
+                <Image alt="Logo" src={Logo} width={86} height={42} className="Logo" />
                 <HEADER_SEARCH>
                     {/* ---------------------- */}
                     <HEADER_SEARCH_BUTTON>
@@ -66,14 +68,14 @@ export default function Header() {
                         placeholder="Tìm kiếm ..."
                         type="text"
                         name="action"
-                        onChange={(e) => setText(e.target.value)}
+                        onChange={(e) => {
+                            setText(e.target.value);
+                            setVisble(true);
+                        }}
                     />
                     {/* -----------SEARCH------------- */}
-                    <DIV_SEARCH>
-                        <main>
-                            <SearchList value={text} />
-                        </main>
-                    </DIV_SEARCH>
+                    <SearchList value={text} visible={visible} />
+
                     {/* ----------------------------- */}
                 </HEADER_SEARCH>
                 <HEADER_NAVBAR>

@@ -10,7 +10,7 @@ export const HEADER = styled.header`
 export const HEADER_FRAME = styled.div`
     width: 100%;
     height: 78px;
-    padding: 15px 140px 15px 140px;
+    padding: 15px 194px 15px 140px;
     border: 0px 0px 0.5px 0px;
     border-bottom: 0.5px solid #ffffff;
     justify-content: space-between;
@@ -19,7 +19,7 @@ export const HEADER_FRAME = styled.div`
 `;
 
 export const HEADER_SEARCH = styled.div`
-    width: 656px;
+    width: 600px;
     height: 44px;
     padding: 6px 6px 6px 21px;
     border-radius: 5px;
@@ -32,7 +32,7 @@ export const HEADER_SEARCH_BUTTON = styled.button`
     width: 69px;
     height: 32px;
     top: 6px;
-    left: 581px;
+    left: 524px;
     border-radius: 5px;
     position: absolute;
     background-color: var(--primary);
@@ -43,7 +43,7 @@ export const HEADER_SEARCH_BUTTON = styled.button`
 `;
 
 export const HEADER_SEARCH_INPUT = styled.input`
-    width: 81px;
+    width: 80%;
     height: 24px;
     top: 9px;
     left: 21px;
@@ -60,7 +60,7 @@ export const HEADER_SEARCH_INPUT = styled.input`
 `;
 
 export const HEADER_NAVBAR = styled.div`
-    width: 431px;
+    width: 430px;
     height: 48px;
     display: flex;
     align-items: center;
@@ -98,7 +98,7 @@ export const HEADER_FOOTER_NAVBAR = styled.div`
 export const LISTITEM = styled.nav`
     display: flex;
     align-items: center;
-    padding: 0;
+    padding-left: 22px;
     margin: 0;
 `;
 
@@ -107,7 +107,7 @@ export const ITEMNAV = styled.div`
     font-weight: 600;
     font-size: 14px;
     color: var(--white);
-    margin-right: 50px;
+    margin-right: 49px;
     padding: 0;
     line-height: 20px;
     position: relative;
@@ -146,11 +146,47 @@ export const ITEMNAV = styled.div`
 export const DIV_SEARCH = styled.div`
     position: absolute;
     width: 100%;
-    height: 100px;
+    max-height: 200px;
+    overflow: hidden auto;
     background-color: #fff;
     z-index: 1000;
     top: 50px;
     left: 0;
     border-radius: 10px;
     box-shadow: var(--primary) 0px 0px 6px;
+    padding: 10px;
+    &::-webkit-scrollbar {
+        width: 10px;
+    }
+    &::-webkit-scrollbar-track {
+        background-color: transparent;
+    }
+    &::-webkit-scrollbar-thumb {
+        border-radius: 20px;
+        width: thin;
+        background-color: #6e4dc7;
+    }
+`;
+
+export const SEARCHLIST = styled.ul`
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+`;
+
+export const SEARCHITEM = styled.li`
+    padding: 8px;
+    border-radius: 20px;
+    color: var(--primary);
+    font-size: 14px;
+    font-family: 'Nunito', sans-serif;
+    font-weight: 600;
+    margin-bottom: 10px;
+    cursor: pointer;
+
+    &:hover {
+        background-color: #eeee;
+    }
 `;

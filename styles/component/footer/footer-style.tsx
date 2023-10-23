@@ -18,7 +18,7 @@ export const DIVFOOTER_1 = styled.div`
     display: flex;
     align-items: flex-start;
     .logo {
-        margin-right: 188px;
+        margin-right: 178px;
     }
 `;
 export const DIVFOOTER1_RIGHT = styled.div`

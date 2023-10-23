@@ -1,11 +1,18 @@
 import React from 'react';
-import { CONTAINER, CONTAINER1 } from '../../../../styles/component/home/home-styled';
+import { CONTAINER } from '../../../../styles/component/home/home-styled';
+import Container1 from './components/Container1.1';
+import Container2 from './components/Container2';
+import Container3 from './components/Container3';
 
 export default function Home() {
     return (
         <CONTAINER>
             {/* container 1 */}
-            <CONTAINER1></CONTAINER1>
+            <Container1 />
+            {/* container2 */}
+            <Container2 />
+            {/* container3 */}
+            <Container3 />
             {/* ========== */}
         </CONTAINER>
     );
