@@ -3,6 +3,7 @@ import { CONTAINER } from '../../../../styles/component/home/home-styled';
 import Container1 from './components/Container1.1';
 import Container2 from './components/Container2';
 import Container3 from './components/Container3';
+import Container4 from './components/container4/layout_container4';
 
 export default function Home() {
     return (
@@ -14,6 +15,7 @@ export default function Home() {
             {/* container3 */}
             <Container3 />
             {/* ========== */}
+            <Container4 />
         </CONTAINER>
     );
 }

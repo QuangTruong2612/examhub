@@ -253,7 +253,7 @@ export const CONTAINER2_FOOTER_BTN = styled.button`
 export const CONTAINER3 = styled.div`
     width: 100%;
     padding-top: 20px;
-    margin-bottom: 20px;
+    margin-bottom: 40px;
 `;
 
 export const CONTAINER3_HEADER = styled.div`
@@ -304,7 +304,7 @@ export const CONTAINER3_BODY = styled.div`
         margin-left: 16px;
         display: flex;
         flex-direction: column;
-        row-gap: 76px;
+        row-gap: 50px;
     }
 `;
 
