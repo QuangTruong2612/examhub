@@ -17,7 +17,7 @@ export const CONTAINER1_IMG = styled.div`
 `;
 
 export const CONTAINER1_RIGHT = styled.div`
-    width: 500px;
+    width: 492px;
     display: flex;
     flex-direction: column;
 `;
@@ -25,7 +25,7 @@ export const CONTAINER1_RIGHT = styled.div`
 export const CONTAINER1_HEADING = styled.span`
     color: var(--primary);
     font-family: 'Poppins', sans-serif;
-    font-size: 55px;
+    font-size: 50px;
     font-style: normal;
     font-weight: 700;
     line-height: 75px;
@@ -155,22 +155,11 @@ export const CONTAINER2_HEADER = styled.div`
         justify-content: center;
 
         span {
-            color: var(--primary);
-            text-align: center;
-            font-family: 'Poppins', sans-serif;
-            font-size: var(--heading-font-size);
-            font-style: normal;
-            font-weight: 700;
-            line-height: 36px;
-            position: relative;
-
             &::before {
                 position: absolute;
                 content: '';
                 width: 160px;
                 height: 4px;
-                background-color: var(--background-color-stick);
-                transform: rotate(-2deg);
                 bottom: 0;
                 left: 232px;
             }

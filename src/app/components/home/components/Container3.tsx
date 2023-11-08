@@ -7,13 +7,14 @@ import {
 } from '../../../../../styles/component/home/home-styled';
 import Image from 'next/image';
 import baloonImag from '../../../../../public/girl2.png';
+import { CONTAINER_HEADER_TEXT } from '../../../../../styles/component/global';
 export default function Container3() {
     return (
         <CONTAINER3>
             {/* ---------- */}
             <CONTAINER3_HEADER>
                 <div className="heading_text">
-                    <span>Giá trị mang đến</span>
+                    <CONTAINER_HEADER_TEXT accessKey="true">Giá trị mang đến</CONTAINER_HEADER_TEXT>
                 </div>
             </CONTAINER3_HEADER>
             {/* ------------ */}

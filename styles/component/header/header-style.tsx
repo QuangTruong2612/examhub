@@ -64,12 +64,12 @@ export const HEADER_NAVBAR = styled.div`
     height: 48px;
     display: flex;
     align-items: center;
-    column-gap: 24px;
+    column-gap: 11px;
 `;
 
 export const HEARDER_BTN = styled.button`
     height: 48px;
-    padding: 11px 14px 11px 14px;
+    padding: 6px 9px 6px 9px;
     border-radius: 24px;
     border: 1px;
     column-gap: 8px;

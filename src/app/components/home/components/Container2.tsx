@@ -14,13 +14,16 @@ import Image from 'next/image';
 import pesudo from '../../../../../public/pseudo.png';
 import girl from '../../../../../public/girl.png';
 import Link from 'next/link';
+import { CONTAINER_HEADER_TEXT } from '../../../../../styles/component/global';
 export default function Container2() {
     return (
         <CONTAINER2>
             {/* ---------- */}
             <CONTAINER2_HEADER>
                 <div>
-                    <span>Bí quyết thành công, tự tin cho mọi học sinh</span>
+                    <CONTAINER_HEADER_TEXT accessKey="true">
+                        Bí quyết thành công, tự tin cho mọi học sinh
+                    </CONTAINER_HEADER_TEXT>
                 </div>
             </CONTAINER2_HEADER>
             {/* ------------ */}
